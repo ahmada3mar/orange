@@ -1,233 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sansita Swashed' rel='stylesheet'>
 
     <title>Ahmad E'mar</title>
+
     <style>
-        body,
-        html {
+        *{
+          
+        }
+
+        html , body{
             margin: 0;
             padding: 0;
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
-        .jumboA {
-
-
-            direction: rtl;
-
-            width: 100%;
-            height: 40vw;
-            position: sticky;
-            top: -20%;
-            background-color: teal;
-
-            z-index: -1;
-
-        }
-
-        .left-part-jumbo {
-            
-
-            position: absolute;
-            top: 12vw;
-            padding-left: 10vw;
-            font-size: 4vw;
-
-        }
-
-        h4 {
-            color: goldenrod;
-            margin: 0;
-
-        }
-
-        h1 {
-            
-            margin-top: 10px;
-            margin-bottom: 0;
-            color: white;
-           
-        }
-
-
-
-        .mainA {
-            display: flex;
-            justify-content: center;
-            background-color: #f1f1f1;
-            width: 100%;
-
-          
-            box-shadow: rgba(92, 92, 92, 0.596) 0 -10px 10px;
-        }
-
-        .jumbo-img {
-            height: 100%;
-            width: 40%;
-            align-content: flex-end;
-        }
-
-        .navA {
-            width: 100%;
-            height: 50px;
-            background-color: #48A9A6;
-            box-shadow: rgba(0, 0, 0, 0.5) 0 1px 20px;
-
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-
-        .card-skills1 {
-            display: flex;
-            flex-wrap: wrap;
-            width: 300px;
-            height: 50px;
-
-
-            align-items: center;
-
-
-
-        }
-
-        .card-skills1>img {
-
-
-            width: 25%;
-            height: 60px;
-        }
-
-        .card-skills1>.bar {
-            display: flex;
-            width: 75%;
-            height: 25px;
-            border: 3px groove #337ab7;
-
-            border-radius: 50px;
-            padding: 2px;
-
-
-
-        }
-
-        .card-skills1 .dash {
-            flex-basis: 75%;
-            background-color: #337ab7;
-            border-radius: 20px;
-            z-index: 3;
-        }
-
-        .skills {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(2, 2fr);
-            justify-items: center;
-            grid-column-gap: 0;
-
-
-            justify-content: space-around;
-
-            width: 800px;
-            height: 400px;
-        }
-
-        .gap {
-            flex-basis: 25%;
-            background-color: lightgray;
-            /* border-radius: 20px; */
-            
-        }
-
-
-        .more > p{
-           width: 30%;
-           color: white;
-        }
-
-.about-me{
-  
-   
-    justify-content: center;
-   
-    background-color: cadetblue;
-    text-align: center;
-    height: auto;
-   
-}
-
-.about-txt{
-    display:inline-flex;
-    width: 40rem;
-  
+.nav{
+    /* border-bottom: 5px teal solid; */
     
-
-}
-
-.flyItem{
-    direction: rtl;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    width: 30rem;
-    height: 2rem;
-}
-
-.flyItem > a{
-    height: 100%;
-   
-}
-.flyItem > a >img{
-    height: 100%;
-   background-size: cover;
-}
-
-
-
-@media screen and (max-width: 670px){
-    .skills{
-     
-            grid-template-columns: repeat(1, 1fr);
-          
-    }
-
-    .about-txt{
-        display:unset;
-    width: auto;
-
-    }
-
-
-    .left-part-jumbo {
-            
-
-            position: absolute;
-            top: 20vw;
-            padding-left: 10vw;
-            font-size: 4vw;
-
-        }
-
-
+   position: sticky;
+  top: 0;
+  width: 100%;
+  
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 7vh;
+    
+   
 }
 
 li {
@@ -244,133 +53,186 @@ li a {
 
 li a:hover {
   background-color: #111;
+  border-bottom:5px solid goldenrod;
 }
 
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 30vw 30vw 30vw;
+    width: 100%;
+   
+    
+}
 
-/* for progress bar */
+.jumbo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    position: sticky;
+    top: 0;
+    
 
-.circular{
-  height: 100px;
-  width: 100px;
-  position: relative;
-}
-.circular .inner, .circular .outer, .circular .circle{
-  position: absolute;
-  z-index: 6;
-  height: 100%;
-  width: 100%;
-  border-radius: 100%;
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
-}
-.circular .inner{
-  top: 50%;
-  left: 50%;
-  height: 80px;
-  width: 80px;
-  margin: -40px 0 0 -40px;
-  background-color: #dde6f0;
-  border-radius: 100%;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
-}
-.circular .circle{
-  z-index: 1;
-  box-shadow: none;
-}
-.circular .numb{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  font-size: 18px;
-  font-weight: 500;
-  color: #4158d0;
-}
-.circular .bar{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #f1f1f1;
-  -webkit-border-radius: 100%;
-  clip: rect(0px, 100px, 100px, 50px);
-}
-.circle .bar .progress{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -webkit-border-radius: 100%;
-  clip: rect(0px, 50px, 100px, 0px);
-}
-.circle .bar .progress, .dot span{
-  background: #4158d0;
-}
-.circle .left .progress{
-  z-index: 1;
-  animation: left 0.5s linear both;
-}
-@keyframes left {
-  100%{
-    transform: rotate(180deg);
-  }
-}
-.circle .right{
-  z-index: 3;
-  transform: rotate(90deg);
-}
-.circle .right .progress{
-  animation: right .5s linear both;
-  animation-delay: .25s;
-}
-@keyframes right {
-  100%{
-    transform: rotate(180deg);
-  }
-}
-/* .circle .dot{
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 50%;
-  height: 10px;
-  margin-top: -5px;
-  animation: dot 1s linear both;
-  transform-origin: 0% 50%;
-} */
-/* .circle .dot span {
-  position: absolute;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-} */
-@keyframes dot{
-  0% {
-    transform: rotate(-90deg);
-  }
-  50% {
-    transform: rotate(90deg);
-    z-index: 4;
-  }
-  100% {
-    transform: rotate(270deg);
-    z-index: 4;
-  }
+    background-color: teal;
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: sticky;
+    top: -5;
+    z-index: -1;
+
+    
 }
 
 
+.Name{
+    margin: auto;
+    font-size: 3vw;
+    z-index: 10;
+}
+.Name h3{
+    color: goldenrod;
+    margin:auto;
+}
 
+.Name h1{
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+}
 
+.jumbo img{
+    margin-left: auto;
+    height: 100%;
+    width: 100%;
+}
 
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,91,92,1) 56%, rgba(0,124,125,0) 85%, rgba(0,124,125,0.03995101458552175) 100%);
+}
+.main{
+    display: flex;
+    
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 20px;
+    margin-bottom: 50px;
+font-size: 2.5vw;
+align-content: center;
+justify-content: center;
+text-align: center;
+
+}
+
+.main h2{
+    color: teal;
+}
+.main div{
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.about{
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    background-color: teal;
+    align-items: center;
+
+    justify-content: center;
+    display: flex;
+
+}
+
+.about p{
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+  font-family: "Sansita Swashed";
+}
+mark{
+    background-color:darkseagreen;
+    color: goldenrod;
+    font-style: oblique;
+    text-shadow: 0 0 3px #380808, 0 0 5px #0000FF
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
     </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "I'm { Full stack \n developer", ".Skills :", "HTML ; ", "Cascading Style Sheets (CSS) ; " ,"SASS ; " ,"$ PHP ; ","JavaScript ;"  , "Paython ; }","Wanna More !" , "I'm Mobile Dev" , " I'm Expert " , " Java, ", " C#, " , "and VB.net . " ,"I'm Super 💪 💪" , "Looking for dev ? ", "Contact me " , "By click on contact\n on the top.. " , "Waiting your Call" ];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i !==   (text.length)) {
+      // add next character to h1
+     document.querySelector(".anmitxt").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == "undefined"){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+   
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+</script>
 
 </head>
 
+
+
+
 <body>
 
-    <header class="navA">
 
+    <header class="nav">
         <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
@@ -379,125 +241,37 @@ li a:hover {
           </ul>
     </header>
 
-    <div class="jumboA">
 
-        <img class="jumbo-img" src="img/profile.png" alt="">
+    <div class="container">
+       
+        <div class="jumbo">
 
-    </div>
-    <div class="left-part-jumbo">
-        <h4>Hey, i'm</h4>
-        <h1>Ahmad <br> E'mar</h1>
-    </div>
-
-    <div class="mainA">
-
-        <div class="skills">
-            <div class="circular">
-                <div class="inner">
-          </div>
-          <div class="outer">
-          </div>
-          <div class="numb">
-          0%</div>
-          <div class="circle">
-                  <div class="dot">
-                    <span></span>
-                  </div>
-          <div class="bar left">
-                    <div class="progress">
-          </div>
-          </div>
-          <div class="bar right">
-                    <div class="progress">
-          </div>
-          </div>
-          </div>
-          </div>
-          <script>
-                const numb = document.querySelector(".numb");
-                let counter = 0;
-                setInterval(()=>{
-                  if(counter == 75){
-                    clearInterval();
-                  }else{
-                    counter+=1;
-                    numb.textContent = counter + "%";
-                  }
-                }, 9);
-              </script>
-
-            <div class="card-skills1 c-2">
-                <img src="img/css.png" alt="">
-                <div class="bar">
-                    <div class="dash"></div>
-                    <div class="gap"></div>
-
-                </div>
+            <div class="Name">
+                <h3>Hey I'm</h3>
+                <h1>Ahmad<br>E'mar</h1>
             </div>
-            <div class="card-skills1 c-3">
-                <img src="img/html.png" alt="">
-                <div class="bar">
-                    <div class="dash"></div>
-                    <div class="gap"></div>
+            <div class="mask"></div>
+            <img src="img/profile4.png" alt="">
+        </div>
+        <div class="main">
+            <h2>About Me </h2>
+            <div class="anmitxt"></div>
+        </div>
+       
+        <div class="about">
 
-                </div>
-            </div>
-            <div class="card-skills1 c-4">
-                <img src="img/photoshop.png" alt="">
-                <div class="bar">
-                    <div class="dash"></div>
-                    <div class="gap"></div>
-
-                </div>
-            </div>
-            <div class="card-skills1 c-5">
-                <img src="img/vb.jpg" alt="">
-                <div class="bar">
-                    <div class="dash"></div>
-                    <div class="gap"></div>
-
-                </div>
-            </div>
-
+            <p>
+                Still here !!? , <br> ok i'll tell you somthing , i'm a <mark>graphic designer</mark> 😁 . <br> i told you , I'm super <br>
+                Wanna learn more about me ?? <br>
+                Click on Download CV above <br>
+                see you 😊
+            </p>
 
         </div>
 
-
     </div>
 
-    <div class="more">
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iste, impedit non corporis nemo sunt reprehenderit delectus nisi repudiandae tempora atque blanditiis voluptatem, et quasi quaerat earum quod magni harum molestiae expedita 
-        </p>
-    </div>
-
-<div class="about-me">
-<h2>
-   About Me
-</h2>
-<h3 class="about-txt">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
-
-    ​
-    
-    This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</h3>
-</div>
-
-
-<div class="more">
- 
-</div>
-
-
-<div class="flyItem">
-
-    <a href="https://facebook.com/ahmada3mar"><img src="img/facebook.png" alt=""></a>
-    <a href="https://linkedin.com/in/ahmada3mar/"><img src="img/linkedin.png" alt=""></a>
-    <a href="https://wa.me/962799991230"><img src="img/whatsapp.png" alt=""></a>
     
     
-    
-</div>
-
 </body>
-
 </html>
