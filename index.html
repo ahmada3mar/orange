@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    height: 7vh;
+   
     
    
 }
@@ -70,7 +70,7 @@ li a:hover {
 .container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 40vw 50vh 50vh;
+    grid-template-rows: 40vw 50vh auto;
     width: 100%;
    
     
@@ -99,7 +99,7 @@ li a:hover {
 
 .Name{
     margin: auto;
-    font-size: 3vw;
+    font-size: 3vmax;
     z-index: 10;
 }
 .Name h3{
@@ -139,8 +139,8 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,91,92,1) 56%, rgba(0
     grid-row-start: 2;
     grid-row-end: 3;
     box-shadow: rgba(0, 0, 0, 0.5) 0 1px 20px;
-    margin-bottom: 50px;
-font-size: 120%;
+    margin-bottom: 2vmax;
+font-size: 3vmax;
 align-content: center;
 justify-content: center;
 text-align: center;
@@ -157,6 +157,7 @@ text-align: center;
 }
 
 .about{
+   
     grid-column-start: 1 ;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -166,12 +167,13 @@ text-align: center;
     align-items: center;
 
     justify-content: center;
-    display: flex;
+   height: auto;
     
 }
 
 .about p{
-    font-size: 145%;
+   
+    font-size:2.5vmax;
   color: white;
   text-align: center;
   font-family: "Sansita Swashed";
@@ -245,7 +247,7 @@ span {
     <header class="nav">
         <ul>
             <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
+            <li><a href="https://ahmada3mar.github.io/HTML">Github</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
           </ul>
@@ -281,6 +283,9 @@ span {
 
     </div>
 
+    <div class="containerNo2">
+        
+    </div>
     
     
 </body>
