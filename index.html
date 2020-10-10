@@ -3,238 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full stack developer , and moblie app programmer . Ahmad E'mar , one of the top programmer he's expert on many technologies such as java , JavaScript , python , c# , Vb.nt , react , reactNative , php , Asp .net and dart "/>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Sansita Swashed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Sonsie One' rel='stylesheet'>
+
 
     <title>Ahmad E'mar</title>
 
-    <style>
-        *{
-          
-        }
-
-        html , body{
-            margin: 0;
-            padding: 0;
-        }
-
-        html{
-            background-image: url(img/hi.gif);
-            background-size:cover;
-            background-repeat:space;
-            background-attachment: fixed;
-            background-position-x: 50%;
-            background-position-y: 60vh;
-          
-        }
-
-.nav{
-    /* border-bottom: 5px teal solid; */
-    
-   position: sticky;
-  top: 0;
-  width: 100%;
-  
-}
-
-ul {
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
    
-    
-   
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-  border-bottom:5px solid goldenrod;
-}
-
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 40vw 50vh auto;
-    width: 100%;
-   
-    
-}
-
-.jumbo{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-    position: sticky;
-    top: 0;
-    
-
-    background-color: teal;
-    grid-column-start: 1 ;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    position: sticky;
-    top: -5;
-    z-index: -1;
-
-    
-}
-
-
-.Name{
-    margin: auto;
-    font-size: 3vmax;
-    z-index: 10;
-}
-.Name h3{
-    color: goldenrod;
-    margin:auto;
-}
-
-.Name h1{
-    margin: auto;
-    margin-top: 10px;
-    color: white;
-}
-
-.jumbo img{
-    margin-left: auto;
-    height: 100%;
-    width: 100%;
-}
-
-.mask{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 5;
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(2,91,92,1) 56%, rgba(0,124,125,0) 85%, rgba(0,124,125,0.03995101458552175) 100%);
-}
-.main{
-    display: flex;
-    
-    flex-direction: column;
-    background-color: rgb(235, 235, 235);
-    grid-column-start: 1 ;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 20px;
-    margin-bottom: 2vmax;
-font-size: 3vmax;
-align-content: center;
-justify-content: center;
-text-align: center;
-
-}
-
-.main h2{
-    color: teal;
-}
-.main div{
-    font-size: 2em;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
-.about{
-   
-    grid-column-start: 1 ;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-
-    background-color: teal;
-    align-items: center;
-
-    justify-content: center;
-   height: auto;
-    
-}
-
-.about p{
-   
-    font-size:2.5vmax;
-  color: white;
-  text-align: center;
-  font-family: "Sansita Swashed";
-}
-mark{
-    background-color:darkseagreen;
-    color: goldenrod;
-    font-style: oblique;
-    text-shadow: 0 0 3px #380808, 0 0 5px #0000FF
-}
-
-span {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
-}
-    </style>
 
 <script>
     document.addEventListener('DOMContentLoaded',function(event){
-  // array with texts to type in typewriter
-  var dataText = [ "I'm { Full stack \n developer", ".Skills :", "HTML ; ", "Cascading Style Sheets (CSS) ; " ,"SASS ; " ,"$ PHP ; ","JavaScript ;"  , "Paython ; }","Wanna More !" , "I'm Mobile Dev" , " I'm Expert " , " Java, ", " C#, " , "and VB.net . " ,"I'm Super 💪 💪" , "Looking for dev ? ", "Contact me " , "By click on contact\n on the top.. " , "Waiting your Call" ];
+
+  var dataText = [ "I'm { Full stack \n developer", ".Skills :", "HTML ; ", "Cascading Style Sheets (CSS) ; " ,"SASS ; " ,"$ PHP ; ","JavaScript ;"  , "Python ; }","Wanna More !" , "I'm Mobile Dev" , " I'm Expert " , " Java, ", " C#, " , "and VB.net . " ,"I'm Super 💪 💪" , "Looking for dev ? ", "Contact me " , "By click on contact\n on the top.. " , "Waiting your Call" ];
   
-  // type one text in the typwriter
-  // keeps calling itself until the text is finished
+  
   function typeWriter(text, i, fnCallback) {
-    // chekc if text isn't finished yet
+   
     if (i !==   (text.length)) {
-      // add next character to h1
+    
      document.querySelector(".anmitxt").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
 
-      // wait for a while and call this function again for next character
+    
       setTimeout(function() {
         typeWriter(text, i + 1, fnCallback)
       }, 100);
     }
-    // text finished, call callback if there is a callback function
+   
     else if (typeof fnCallback == 'function') {
-      // call callback after timeout
+     
       setTimeout(fnCallback, 700);
     }
   }
-  // start a typewriter animation for a text in the dataText array
+ 
    function StartTextAnimation(i) {
      if (typeof dataText[i] == "undefined"){
         setTimeout(function() {
           StartTextAnimation(0);
         }, 20000);
      }
-     // check if dataText[i] exists
-   
-      // text exists! start typewriter animation
+     
      typeWriter(dataText[i], 0, function(){
-       // after callback (and whole text has been animated), start next text
+      
        StartTextAnimation(i + 1);
      });
     
   }
-  // start the text animation
+  
   StartTextAnimation(0);
-});
+})
+
+
+;
+
+function myFunction() {
+  var x = document.getElementById("Mynav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+
+
 </script>
+
+
+<title>Portfolio</title>
+
+
 
 </head>
 
@@ -244,13 +86,16 @@ span {
 <body>
 
 
-    <header class="nav">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="https://ahmada3mar.github.io/HTML">Github</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
+    <header id="Mynav" class="nav">
+        
+            <a class="activeBtn" href="#home">Home</a>
+           <a href="https://ahmada3mar.github.io/HTML">Github</a>
+            <a href="contact/contact.html">Contact</a>
+            <a href="About/About.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                ☰
+              </a>
+          
     </header>
 
 
@@ -272,10 +117,12 @@ span {
        
         <div class="about">
 
+            <img src="img/graphic.gif" alt="">
+
             <p>
-                Still here !!? , <br> ok i'll tell you somthing , i'm a <mark>graphic designer</mark> 😁 . <br> i told you , I'm super <br>
+                Still here !!? , <br> ok i'll tell you somthing , i'm a <mark>graphic designer</mark> 😁 . <br> i told you , I'm <span class="super">super</span> <br>
                 Wanna learn more about me ?? <br>
-                Click on Download CV above <br>
+                Click on About above <br>
                 see you 😊
             </p>
 
